@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CYNITE TECHNOLOGIES</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tailwind.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+<!-- NAVIGATION BAR -->
+<nav class=" fixed top-0 left-0 right-0 z-50 p-4 md:px-40 flex justify-between items-center">
+  <!-- Logo -->
+  <div class="pl-4 md:pl-0 text-lg font-semibold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+    Cynite Technologies
+  </div>
+
+  <!-- Desktop Menu -->
+  <div class="hidden md:flex gap-6 text-sm font-semibold">
+    <a href="#features" class="hover:text-blue-700">Services</a>
+    <a href="#features" class="hover:text-blue-700">Products</a>
+    <a href="#about" class="hover:text-blue-700">About</a>
+    <a href="#contact" class="hover:text-blue-700">Contact</a>
+    <a href="#careers" class="hover:text-blue-700">Careers</a>
+  </div>
+
+  <!-- Buttons -->
+  <div class="flex items-center">
+    <button class="hidden md:block bg-gradient-to-r from-blue-500 to-blue-800 text-white px-6 py-2 rounded-full hover:from-blue-600 hover:to-blue-900 transition">
+      Get Started
+    </button>
+
+    <!-- Mobile Menu Icon -->
+    <div onclick="toggleMenu()" class="block md:hidden text-gray-700 text-2xl cursor-pointer px-4">
+      ☰
+    </div>
+  </div>
+</nav>
+
+<!-- FULLSCREEN MOBILE MENU -->
+<div id="mobileMenu" class="fixed inset-0 bg-white z-40 flex-col justify-center items-center hidden">
+  <div onclick="toggleMenu()" class="absolute top-4 right-6 text-3xl text-gray-700 cursor-pointer">
+    &times;
+  </div>
+  <div class="flex flex-col gap-6 text-xl font-semibold text-center text-blue-700">
+    <a href="#features">Services</a>
+    <a href="#features">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#careers">Careers</a>
+    <button class="mt-4 bg-gradient-to-r from-blue-500 to-blue-800 text-white px-6 py-2 rounded-full hover:from-blue-600 hover:to-blue-900 transition">
+      Get Started
+    </button>
+  </div>
+</div>
+
+<!-- HERO SECTION -->
+<center>
+  <section id="home" class="hero-section bg-cover md:bg-contain md:pb-32 pb-2 border-gray-800 from-blue-50 to-white md:min-h-screen h-min-content cursor-default">
+    <div class="main-hero bg-white pb-0 md:mb-56 mb-28">
+      <div class="pt-28 md:pt-40 pb-20 px-6 md:px-32">
+        <div class="md:max-w-4xl mt-2 md:py-2 md:pt-2">
+          <div class="flex flex-row justify-center">
+            <div class="text-sm font-semibold hover:shadow transition-all cursor-pointer border-2 bg-gray-100 mt-10 px-6 py-2 rounded-full">
+              <i class="si-megaphone mx-2"></i>
+              Join our product launch waitlist
+            </div>
+          </div>
+          <div class="font-semibold md:text-6xl text-2xl mt-4">
+            <span class="bg-gradient-to-r from-blue-900 to-blue-500 bg-clip-text text-transparent">Empowering</span>
+            tomorrow's businesses with
+            <span class="bg-gradient-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent">smart,</span>
+            scalable solutions.
+          </div>
+          <div class="text-lg text-gray-800 font-semibold mt-4">
+            We bring your ideas to Life. Built in Africa, for the World!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</center>
+
+<section class="section-2 px-6 md:px-48 py-20 bg-white">
+  <div class="text-center">
+    <div class="text-sm uppercase font-semibold text-blue-600">Our Services</div>
+    <div class="text-3xl md:text-4xl font-bold mt-2">Comprehensive Solutions for Your Business</div>
+    <p class="text-gray-500 max-w-xl mx-auto mt-4 text-base">
+      From strategy to implementation, we offer end-to-end services that drive measurable results for your organization.
+    </p>
+  </div>
+
+  <div class="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- Service Card -->
+    <div class="bg-white hover:text-white transition-all shadow p-6 rounded-xl border">
+      <div class="flex items-center gap-2 mb-4 text-blue-600">
+        <i class="si-code text-xl"></i>
+        <h3 class="font-bold text-lg mt-1">Web Development</h3>
+      </div>
+      <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+        <li>Responsive Design</li>
+        <li>SEO Optimization</li>
+        <li>Fast Loading</li>
+      </ul>
+    </div>
+
+    <!-- Repeat for each service card with respective icon and content -->
+    <!-- Mobile Apps -->
+    <div class="bg-white hover:text-white transition-all shadow p-6 rounded-xl border">
+      <div class="flex items-center gap-2 mb-4 text-blue-600">
+        <i class="si-tablet text-xl"></i>
+        <h3 class="font-bold text-lg mt-1">Mobile Apps</h3>
+      </div>
+      <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+        <li>iOS & Android Apps</li>
+        <li>User-Friendly UI</li>
+        <li>App Store Ready</li>
+      </ul>
+    </div>
+
+    <!-- Continue for remaining cards... -->
+
+    <!-- Digital Marketing -->
+    <div class="bg-white hover:text-white transition-all shadow p-6 rounded-xl border">
+      <div class="flex items-center gap-2 mb-4 text-blue-600">
+        <i class="si-chart-line text-xl"></i>
+        <h3 class="font-bold text-lg mt-1">Digital Marketing</h3>
+      </div>
+      <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+        <li>SEO & SEM</li>
+        <li>Social Media Ads</li>
+        <li>Analytics</li>
+      </ul>
+    </div>
+
+    <!-- Cloud Services -->
+    <div class="bg-white hover:text-white transition-all shadow p-6 rounded-xl border">
+      <div class="flex items-center gap-2 mb-4 text-blue-600">
+        <i class="si-cloud text-xl"></i>
+        <h3 class="font-bold text-lg mt-1">Cloud Services</h3>
+      </div>
+      <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+        <li>Server Configurations and Management</li>
+        <li>Migration Support</li>
+        <li>24/7 Monitoring</li>
+      </ul>
+    </div>
+
+    <!-- Cybersecurity -->
+    <div class="bg-white hover:text-white transition-all shadow p-6 rounded-xl border">
+      <div class="flex items-center gap-2 mb-4 text-blue-600">
+        <i class="si-shield-check text-xl"></i>
+        <h3 class="font-bold text-lg mt-1">Cybersecurity</h3>
+      </div>
+      <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+        <li>Threat Assessment</li>
+        <li>Security Audits</li>
+        <li>Compliance</li>
+      </ul>
+    </div>
+
+    <!-- Consulting -->
+    <div class="bg-white hover:text-white transition-all shadow p-6 rounded-xl border">
+      <div class="flex items-center gap-2 mb-4 text-blue-600">
+        <i class="si-compass text-xl"></i>
+        <h3 class="font-bold text-lg mt-1">Consulting</h3>
+      </div>
+      <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+        <li>Strategy Planning</li>
+        <li>Process Optimization</li>
+        <li>Expert Guidance</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SERVICES SECTION -->
+<!-- <section id="features" class="section-2 px-6 md:px-20 py-20">
+  <div class="flex justify-center py-10">
+    <div class="text-4xl md:text-6xl font-semibold text-center">
+      Our
+      <span class="bg-gradient-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent">Services</span>
+    </div>
+  </div>
+
+  <div class="grid gap-6 mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="bg-gray-100 border-2 rounded-2xl p-6">
+      <div class="text-lg font-semibold text-center">Web Development</div>
+      <div class="text-sm text-gray-500 text-center pt-4">
+        Enhance your online presence with a custom website. Our team focuses on clean, minimalistic designs.
+      </div>
+    </div>
+
+    <div class="bg-gray-100 border-2 rounded-2xl p-6">
+      <div class="text-lg font-semibold text-center">Software Development and Maintenance</div>
+      <div class="text-sm text-gray-500 text-center pt-4">
+        We build custom software for your business or institution, including management systems and more.
+      </div>
+    </div>
+
+    <div class="bg-gray-100 border-2 rounded-2xl p-6">
+      <div class="text-lg font-semibold text-center">Mobile App Development</div>
+      <div class="text-sm text-gray-500 text-center pt-4">
+        Our mobile app solutions cater to all use cases—from sleek UI designs to full-scale applications.
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section-2 px-6 md:px-36 py-20">
+  <div class="flex flex-col lg:flex-row items-center gap-10">
+    <div class="w-full lg:w-1/2 p-2 text-center lg:text-left">
+      <div class="text-7xl md:text-7xl font-semibold leading-tight">
+        Built with <br />
+        <span class="bg-gradient-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent">Perfection</span>
+      </div>
+      <div class="text-lg font-semibold text-gray-700 mt-4 max-w-xl mx-auto lg:mx-0">
+        Our team focuses on modern, efficient custom system designs,
+        creating a better experience for your business.
+      </div>
+    </div>
+    <div class="w-full lg:w-1/2 p-2">
+      <img class="rounded-3xl w-full" src="./image/dashboard.png" alt="Dashboard Image" />
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section-2 px-6 md:px-20 lg:px-48 py-20 bg-gray-50">
+  <div class="text-center">
+    <div class="text-sm uppercase font-semibold text-blue-600">Our Work</div>
+    <div class="text-3xl sm:text-4xl font-bold mt-2">Recent Projects</div>
+    <p class="text-gray-500 max-w-xl mx-auto mt-4 text-sm sm:text-base">
+      Explore how we’ve helped businesses achieve their goals through innovation.
+    </p>
+  </div>
+
+  <div class="flex flex-wrap justify-center gap-4 mt-10 text-sm font-medium text-blue-600">
+    <div class="bg-white px-4 py-2 rounded-full shadow">Business Forecasting System</div>
+    <div class="bg-white px-4 py-2 rounded-full shadow">3D Design App</div>
+    <div class="bg-white px-4 py-2 rounded-full shadow">Corporate Website</div>
+    <div class="bg-white px-4 py-2 rounded-full shadow">Social Network App</div>
+    <div class="bg-white px-4 py-2 rounded-full shadow">Employee Management System</div>
+  </div>
+</section>
+
+
+
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class=" section-2 px-6 md:px-20 lg:px-28 py-20 bg-white">
+  <div class="text-center mb-12">
+    <div class="text-sm uppercase font-semibold text-blue-600 mb-2">Testimonials</div>
+    <div class="text-3xl sm:text-4xl font-bold mb-4">What Our Clients Say</div>
+    <p class="text-gray-500 max-w-xl mx-auto text-sm sm:text-base">
+      Here’s what our satisfied clients have to say about working with us.
+    </p>
+  </div>
+
+  <div class=" flex flex-wrap justify-center gap-4 text-sm font-medium text-blue-600">
+    <div class="bg-gray-100 rounded-2xl shadow p-6 w-full sm:w-[300px] max-w-sm">
+      <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+      <p class="text-sm text-gray-700 italic mb-4">
+        "The UX is amazing. We’ve had a 40% boost in engagement since relaunching."
+      </p>
+      <div class="font-semibold text-gray-900">Grace Dlamini</div>
+      <div class="text-xs text-gray-500">CEO, AfroStream</div>
+    </div>
+    <div class="bg-gray-100 rounded-2xl shadow p-6 w-full sm:w-[300px] max-w-sm">
+      <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+      <p class="text-sm text-gray-700 italic mb-4">
+        "The UX is amazing. We’ve had a 40% boost in engagement since relaunching."
+      </p>
+      <div class="font-semibold text-gray-900">Grace Dlamini</div>
+      <div class="text-xs text-gray-500">CEO, AfroStream</div>
+    </div>
+    <div class="bg-gray-100 rounded-2xl shadow p-6 w-full sm:w-[300px] max-w-sm">
+      <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+      <p class="text-sm text-gray-700 italic mb-4">
+        "The UX is amazing. We’ve had a 40% boost in engagement since relaunching."
+      </p>
+      <div class="font-semibold text-gray-900">Grace Dlamini</div>
+      <div class="text-xs text-gray-500">CEO, AfroStream</div>
+    </div>
+  
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CAREERS SECTION -->
+<section id="careers" class="section-2 px-6 md:px-48 py-20 bg-gray-50">
+  <div class="flex flex-row justify-center py-10">
+    <div class="text-4xl md:text-6xl font-semibold">
+      Join Our
+      <span class="bg-gradient-to-r from-blue-500 to-purple-700 bg-clip-text text-transparent">Team</span>
+    </div>
+  </div>
+
+  <div class="flex flex-row justify-center">
+    <div class="w-full md:w-2/3 bg-gray-100 border-2 rounded-2xl p-6">
+      <div class="text-center text-lg font-semibold">Careers at Cynite</div>
+      <div class="text-sm text-gray-500 text-center pt-4">
+        We're always looking for passionate, talented, and creative individuals.
+        Be part of a team building Africa's future tech.
+      </div>
+      <div class="text-center mt-6">
+        <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition">
+          View Openings
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="px-4 sm:px-8 md:px-16 py-12 bg-white">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl sm:text-4xl font-semibold">
+      Get in
+      <span class="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Touch</span>
+    </h2>
+  </div>
+
+  <div class="max-w-xl mx-auto bg-gray-100 border rounded-2xl p-6 shadow">
+    <form class="grid grid-cols-1 gap-4">
+      <input type="text" placeholder="Your Name" class="p-3 border border-gray-300 rounded-lg w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded-lg w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <textarea placeholder="Your Message" rows="4" class="p-3 border border-gray-300 rounded-lg w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <div class="text-center pt-2">
+        <button type="submit" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:from-blue-700 hover:to-purple-700 transition">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white text-sm px-4 py-10">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
+    <div>
+      <h4 class="font-bold mb-4 text-blue-400">Cynite Technologies</h4>
+      <p class="text-gray-400">Empowering tomorrow’s businesses with smart, scalable solutions built in Africa for the world.</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-4">Company</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+        <li><a href="#careers" class="hover:text-white transition">Careers</a></li>
+        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-4">Services</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#features" class="hover:text-white transition">Web Development</a></li>
+        <li><a href="#features" class="hover:text-white transition">Mobile Apps</a></li>
+        <li><a href="#features" class="hover:text-white transition">Cloud Solutions</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-4">Subscribe</h4>
+      <p class="text-gray-400 mb-4">Get updates and news about our launches.</p>
+      <form class="flex flex-col sm:flex-row gap-2">
+        <input type="email" placeholder="Enter email" class="px-3 py-2 text-sm rounded bg-gray-800 text-white focus:outline-none">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="text-center mt-10 border-t border-gray-700 pt-4 text-xs text-gray-400">
+    © 2025 CYNITE TECHNOLOGIES. All rights reserved.
+  </div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+  }
+
+  // Smooth scroll to section & close mobile menu
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // Close mobile menu if open
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenu.classList.contains('flex')) {
+          toggleMenu();
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

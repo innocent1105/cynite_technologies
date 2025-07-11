@@ -1,0 +1,92 @@
+body{
+    background-color: #fff;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+}
+.main-section-text{
+    color: #044ec5;
+    text-shadow: rgb(144, 172, 255) 0px 0px 25px;
+}
+
+.hero-section{
+    background-image: url("../image/main.jpg");
+    background-size: contain;
+}
+.main-hero{
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    -webkit-box-shadow:0px 0px 74px 93px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 74px 93px rgba(255,255,255,1);
+    box-shadow: 0px 0px 74px 93px rgba(255,255,255,1);
+}
+.testimonial-1 {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(1.6px);
+}
+.design-ex img{
+    border-radius: 35px;
+}
+.dashboard-image{
+    background-image: url(../image/main2.jpg);
+    background-size: cover;
+    -webkit-box-shadow:0px 0px 74px 20px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 74px 20px rgba(255,255,255,1);
+    box-shadow: 0px 0px 74px 20px rgba(255,255,255,1);
+}
+.section-2{
+
+    -webkit-box-shadow:0px 0px 94px 20px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 90px 20px rgba(255,255,255,1);
+    box-shadow: 0px 0px 54px 50px rgba(255,255,255,1);
+}
+.section-2-big-text{
+    font-size: 95px;
+}
+.service, .service p, .service div{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.service:hover{
+    background-image: url("../image/f554fbac9c84b0a56a391eeff8f68829.jpg");
+    background-size: cover;
+    cursor: default;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
